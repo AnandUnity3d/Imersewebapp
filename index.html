@@ -9,9 +9,23 @@
   </style>
 </head>
 <body>
+
+  <form id="myForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" id="firstName" required>
+    <br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/controls/OrbitControls.js"></script> -->
+
+  <script src="userform.js"></script>
+
   <script>
     // Create a scene
     const scene = new THREE.Scene();
